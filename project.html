@@ -2,27 +2,67 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mini-project 2: HTML Head Checklist</title>
+  
+  <title>HTML Head Checklist & Cấu Trúc Mã Chuẩn</title>
   
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <div>
-    <h1>Hướng dẫn cấu hình HTML Head và Tổ chức bài bản</h1>
-    
-    <h2>1. Các thành phần bắt buộc trong Head</h2>
-    <ul>
-      <li><strong>Charset:</strong> Định dạng mã hóa UTF-8 để hiển thị tiếng Việt chuẩn.</li>
-      <li><strong>Viewport:</strong> Giúp trang web hiển thị responsive trên di động.</li>
-      <li><strong>Title:</strong> Tiêu đề hiển thị trên tab trình duyệt.</li>
-      <li><strong>Link CSS:</strong> Liên kết tệp trang trí bên ngoài.</li>
-    </ul>
+  <header>
+    <div class="container">
+      <h1>Cẩm Nang Cấu Hình HTML Head & Định Dạng Mã Nguồn</h1>
+      <p>Trang web hướng dẫn chi tiết cách tổ chức tệp tin, viết bình luận và tối ưu hóa tài nguyên hệ thống.</p>
+    </div>
+  </header>
 
-    <h2>2. Quy tắc định dạng và kiểm tra</h2>
-    <p>Mã nguồn cần được viết nhiều dòng, thụt lề hợp lý bằng phím Tab để phân biệt thẻ cha-con. Sử dụng DevTools (tab Console) để kiểm tra nếu đường dẫn CSS hoặc JS bị lỗi 404.</p>
-  </div>
+  <main class="container">
+    
+    <section class="card">
+      <h2>1. Danh Sách Kiểm Tra (Head Checklist)</h2>
+      <p>Một file HTML tiêu chuẩn bắt buộc phải chứa các thành phần cấu hình cốt lõi trong thẻ <code>&lt;head&gt;</code> để trình duyệt có thể xử lý chính xác:</p>
+      <ul>
+        <li><strong>Thẻ Meta Charset:</strong> Khai báo bảng mã <code>UTF-8</code> giúp hiển thị tiếng Việt có dấu chuẩn xác, không bị lỗi ký tự.</li>
+        <li><strong>Thẻ Meta Viewport:</strong> Kiểm soát kích thước hiển thị, đảm bảo giao diện co giãn phù hợp (Responsive) trên màn hình điện thoại và máy tính bảng.</li>
+        <li><strong>Thẻ Title:</strong> Xác định tiêu đề hiển thị của trang web, xuất hiện trực tiếp trên tab trình duyệt để người dùng dễ dàng nhận biết.</li>
+        <li><strong>Liên kết tài nguyên ngoài:</strong> Sử dụng thẻ <code>&lt;link&gt;</code> để nhúng file CSS trang trí và thẻ <code>&lt;script&gt;</code> để nhúng file logic JavaScript.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>2. Quy Tắc Định Dạng Mã Nguồn (Format Code)</h2>
+      <p>Để mã nguồn luôn sạch sẽ, dễ bảo trì và làm việc nhóm hiệu quả, hãy tuân thủ 3 nguyên tắc sau:</p>
+      
+      <div class="rule-box">
+        <h3>💡 Nguyên tắc Thụt dòng & Phân cấp (Indentation)</h3>
+        <p>Mỗi khi một phần tử nằm bên trong một phần tử khác (quan hệ cha - con), phần tử con bắt buộc phải lùi vào một mức (thường là 2 hoặc 4 khoảng trắng). Gõ mã trên nhiều dòng, tuyệt đối không viết dính liền trên một dòng.</p>
+      </div>
+
+      <div class="rule-box">
+        <h3>💡 Nguyên tắc Viết Bình luận (Comment)</h3>
+        <p>Sử dụng cú pháp <code>&lt;!-- Nội dung --&gt;</code> để ghi chú giải thích luồng xử lý ở đầu trang, nội dung chính hoặc chân trang. Bình luận cần ngắn gọn, súc tích và không thay thế nội dung mã nguồn thực tế.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>3. Hướng Dẫn Kiểm Tra Tài Nguyên Bằng DevTools</h2>
+      <p>Nếu giao diện CSS không hiển thị hoặc tính năng JS không hoạt động, hãy thực hiện kiểm tra nhanh theo các bước sau:</p>
+      <ol>
+        <li>Nhấn phím <strong>F12</strong> hoặc chuột phải chọn <strong>Inspect (Kiểm tra)</strong> để mở bộ công cụ lập trình viên.</li>
+        <li>Bấm sang tab <strong>Console</strong> để tìm các dòng báo lỗi màu đỏ dạng <code>404 Not Found</code>.</li>
+        <li>Nếu thấy lỗi, hãy kiểm tra lại tính chính xác của đường dẫn trong thuộc tính <code>href</code> (đối với CSS) hoặc <code>src</code> (đối với JS).</li>
+      </ol>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Dự Án Học Tập HTML Learning Lab. Được xây dựng bởi Nguyễn Võ Rin Đô.</p>
+    </div>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>
